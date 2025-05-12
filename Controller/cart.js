@@ -1,5 +1,5 @@
 const ApiError = require("../global/globalApiError");
-const Cart = require("../Models/Cart");
+const Cart = require("../models/Cart");
 const Product = require("../Models/Product");
 const calcTotalPrice = (cart) => {
   let sum = 0;

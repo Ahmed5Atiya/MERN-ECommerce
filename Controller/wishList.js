@@ -1,6 +1,4 @@
 const ApiError = require("../global/globalApiError");
-const Cart = require("../Models/Cart");
-const Order = require("../Models/order");
 const Product = require("../Models/Product");
 const User = require("../Models/User");
 

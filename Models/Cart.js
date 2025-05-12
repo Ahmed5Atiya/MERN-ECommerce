@@ -25,5 +25,8 @@ const cartSchema = mongoose.Schema(
   { timestamps: true }
 );
 
-const Cart = mongoose.model("cart", cartSchema);
-module.exports = Cart;
+// Add index for faster queries on user
+cartSchema.index({ user: 1 });
+
+// Export the model, reusing it if already defined
+module.exports = mongoose.models.cart || mongoose.model("cart", cartSchema);
